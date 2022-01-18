@@ -2,12 +2,6 @@ var express = require('express');
 var app = express();
 var ejs = require('ejs');
 
-var server = app.listen(3000, function () {
-  var host = server.address().address;
-  var port = server.address().port;
-  console.log('App listening at http://%s:%s', host, port);
-});
-
 app.set('view engine', 'ejs');
 
 var pages = [
@@ -26,3 +20,10 @@ pages.forEach( (page) => {
 })
 
 app.use(express.static(__dirname + '/public'));
+
+const PORT = process.env.PORT || 3000;
+var server = app.listen(PORT, function () {
+  var host = server.address().address;
+  var port = server.address().port;
+  console.log('App listening at http://%s:%s', host, port);
+});
