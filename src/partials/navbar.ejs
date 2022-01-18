@@ -1,0 +1,28 @@
+
+<nav id="sidebar">
+    <div class="p-4 pt-5">
+        <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(images/headshotcircle.png);"></a>
+        <div class='row'>
+            <h2 style='text-align: center;' id='sidebar-name'>Hunter Baker</h2>
+        </div>
+        <ul class="list-unstyled components mb-5">
+
+            <% pages.forEach((page) => { %>
+                
+                <li <%= currentPage === page.link? 'class=active' : '' %>  >
+                    <a href = "<%= page.link %>" ><%=page.name%></a>
+                </li>
+
+            <% });%>
+
+
+        </ul>
+        <div id='icons' class='row w-100'>
+            <div class='col'><a href='https://github.tamu.edu/hbake'><img src='https://img.icons8.com/ios/50/ffffff/github--v2.png' class="img-fluid"></a></div>
+            <div class='col'><a href='https://www.linkedin.com/in/hunter-baker-286627205/'><img src='https://img.icons8.com/ios/50/ffffff/linkedin.png' class="img-fluid"></a></div>
+            <div class='col'><a href="resume.pdf" download='Resume-Hunter-Baker.pdf'><img src='https://img.icons8.com/ios/50/ffffff/resume.png' class="img-fluid"></a></div>
+            <div class='col'><a href='mailto:hbake@tamu.edu'><img src='https://img.icons8.com/ios/50/ffffff/new-post.png' class="img-fluid"></a></div>
+        </div>
+
+    </div>
+</nav>
