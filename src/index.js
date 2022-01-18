@@ -5,7 +5,7 @@ var ejs = require('ejs');
 app.set('view engine', 'ejs');
 
 var pages = [
-    {name: 'Index', link: '/', file: 'index.ejs'},
+    {name: 'Home', link: '/', file: 'index.ejs'},
     {name: 'Portfolio', link: 'portfolio', file: 'portfolio.ejs'},
     {name: 'Qualifications', link: 'qualifications', file: 'qualifications.ejs'},
 ]
