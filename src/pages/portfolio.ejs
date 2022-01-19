@@ -1,27 +1,18 @@
-<!-- <?php $currentPage = 'portfolio'; ?> -->
-<!-- <?php include('head.php'); ?> -->
 <%- include('../partials/head') %> 
 
 <body>
 
     <div class="wrapper d-flex align-items-stretch">
 
-
-        <!-- <?php include('navbar.php')?> -->
         <%- include('../partials/navbar') %> 
-
 
         <!-- Page Content  -->
         <div id="content" class="p-2 p-md-4">
 
-
-            <!-- <?php include('smallview-import.php')?> -->
             <%- include('../partials/smallview-import') %> 
-
             
             <div class='container-fluid p-1 p-md-4'>
                 
-                <!-- <?php include('top.php')?> -->
                 <%- include('../partials/top') %> 
                 
                 <div class='row'>
@@ -32,68 +23,65 @@
 
                     projects = [
                     {
-                    name : 'OcrTracker',
-                    url : 'https://github.com/HBake/ocrtracker',
-                    img : 'images/ocr.png',
-                    desc : 'My team and I developed a Workout of the Day web application for the Texas A&M Obsticle Cource Racing club. We primarily used Ruby on Rails as our framework and environment. The website is hosted on Heroku.'
+                        name : 'OcrTracker',
+                        url : 'https://github.com/HBake/ocrtracker',
+                        img : 'images/ocr.png',
+                        desc : 'My team and I developed a Workout of the Day web application for the Texas A&M Obsticle Cource Racing club. We primarily used Ruby on Rails as our framework and environment. The website is hosted on Heroku.'
                     },
                     {
-                    name : 'Travel Ahoy!',
-                    url : 'https://github.com/HBake/Travel-Ahoy',
-                    img : 'images/travel-ahoy.png',
-                    desc : 'I was the product owner and scrum master of my Programming Studio group for our final Project, Travel Ahoy. <br>  Our project, Travel Ahoy!, is a web based application that is designed to allow users to easily plan out trips from one country to another. While our project is mostly based in the European continent the scope of our project can be expanded to include other countries around the world, currently supported is United States, United Kingdom, India, Spain, and Germany. Travel Ahoy\'s main purpose is to provide users with travel information through different methods of traveling, but also their destination information with it. This format allows us to not only give our users multiple options, it also allows us to calculate the cheapest and fastest travel options for the user - giving them control to their preferred method of travel. Furthermore, Travel Ahoy provides different types of information such as: News (of your destination), Point of Interests, 7 day forecast of the weather, and a graph displaying the current covid condition. Finally, we give users the ability to plan their return date flights so that they can clearly plan out their vacation.'
+                        name : 'Travel Ahoy!',
+                        url : 'https://github.com/HBake/Travel-Ahoy',
+                        img : 'images/travel-ahoy.png',
+                        desc : 'I was the product owner and scrum master of my Programming Studio group for our final Project, Travel Ahoy. <br>  Our project, Travel Ahoy!, is a web based application that is designed to allow users to easily plan out trips from one country to another. While our project is mostly based in the European continent the scope of our project can be expanded to include other countries around the world, currently supported is United States, United Kingdom, India, Spain, and Germany. Travel Ahoy\'s main purpose is to provide users with travel information through different methods of traveling, but also their destination information with it. This format allows us to not only give our users multiple options, it also allows us to calculate the cheapest and fastest travel options for the user - giving them control to their preferred method of travel. Furthermore, Travel Ahoy provides different types of information such as: News (of your destination), Point of Interests, 7 day forecast of the weather, and a graph displaying the current covid condition. Finally, we give users the ability to plan their return date flights so that they can clearly plan out their vacation.'
                     },
                     {
-                    name : 'Live, Laugh, LaserCats',
-                    url : 'https://github.com/HBake/Live-Laugh-LaserCats',
-                    img : 'images/laser.png',
-                    desc : 'As a project for TAMUhack 2021, my team and I made a remote-controllable laser pointer so that cat owners can play with their cats from anywhere. With an integrated Twitch stream, two servos to control the laser diode, and other electronic components, a pet owner can feel more at home while away.'
+                        name : 'Live, Laugh, LaserCats',
+                        url : 'https://github.com/HBake/Live-Laugh-LaserCats',
+                        img : 'images/laser.png',
+                        desc : 'As a project for TAMUhack 2021, my team and I made a remote-controllable laser pointer so that cat owners can play with their cats from anywhere. With an integrated Twitch stream, two servos to control the laser diode, and other electronic components, a pet owner can feel more at home while away.'
                     },
                     {
-                    
-                    name : 'Data Processing for PhD Student',
-                    url : 'https://github.com/HBake/Naturally-Occurring-Isotopes-Converter',
-                    img : 'images/isotopes.png',
-                    desc : 'As a freshman at Texas A&M, I was contacted by my ENGR 102 professor, Evans Kitcher, and asked to assist PhD student Hadyn Kistle process data for her research project. Using a python script, I was able to separate data related to several different elements into fractional subsets corresponding to their naturally occurring isotopes.'
-                    
+                        name : 'Data Processing for PhD Student',
+                        url : 'https://github.com/HBake/Naturally-Occurring-Isotopes-Converter',
+                        img : 'images/isotopes.png',
+                        desc : 'As a freshman at Texas A&M, I was contacted by my ENGR 102 professor, Evans Kitcher, and asked to assist PhD student Hadyn Kistle process data for her research project. Using a python script, I was able to separate data related to several different elements into fractional subsets corresponding to their naturally occurring isotopes.'
                     },
                     {
-                    name : 'Orbot - Hardware to Assist 3D Model Visualization',
-                    url : 'https://devpost.com/hbake',
-                    img : 'images/orbot.jpg',
-                    desc : 'My team and I created a small enclosed device that interfaces with a usb port and allows the user to manipulate a 3D model with six degrees of freedom by rotating a small device in their hand.'
+                        name : 'Orbot - Hardware to Assist 3D Model Visualization',
+                        url : 'https://devpost.com/hbake',
+                        img : 'images/orbot.jpg',
+                        desc : 'My team and I created a small enclosed device that interfaces with a usb port and allows the user to manipulate a 3D model with six degrees of freedom by rotating a small device in their hand.'
                     },
                     {
 
-                    name : 'SLICE Zamboni Schedule',
-                    url : 'http://sugarlandice.herokuapp.com/',
-                    img : 'images/slice.jpg',
-                    desc : 'While working for the Sugar Land Ice &amp; Sports Center as an operations specialist, I created a website to help Zamboni drivers stay on schedule. Using Node.js and Heroku, This script runs 24/7 to scrape schedule data from the <a href="http://calendar.sugarlandice.net/calendar-ops.php" target="_blank" rel="noopener noreferrer">SLICE operations schedule</a> and convert it into a simplified ice-cut schedule.'
+                        name : 'SLICE Zamboni Schedule',
+                        url : 'http://sugarlandice.herokuapp.com/',
+                        img : 'images/slice.jpg',
+                        desc : 'While working for the Sugar Land Ice &amp; Sports Center as an operations specialist, I created a website to help Zamboni drivers stay on schedule. Using Node.js and Heroku, This script runs 24/7 to scrape schedule data from the <a href="http://calendar.sugarlandice.net/calendar-ops.php" target="_blank" rel="noopener noreferrer">SLICE operations schedule</a> and convert it into a simplified ice-cut schedule.'
                     },
                     {
-                    
-                    name : 'Better shuffle feature for Spotify',
-                    url : 'https://github.com/HBake/Better-shuffle',
-                    img : 'images/shuffle.png',
-                    desc : 'As an avid electronic music fan and Spotify user, I was shocked to learn that Spotify\'s \'Shuffle\' feature prioritizes songs that cost them less per play instead of being truly random. To fix this, I made a python script that creates a list of song ID\'s that are in my library, randomize the order, and then insert back into a playlist in a truly (pseudo) random order. To activate this script, all I have to do is play the song \'Sandstorm - Darude\' on my Spotify account. It will recognize the song ID current playing, randomize all of my tracks, and then quickly switch my currently-playing song to the first one in the playlist.'
+                        
+                        name : 'Better shuffle feature for Spotify',
+                        url : 'https://github.com/HBake/Better-shuffle',
+                        img : 'images/shuffle.png',
+                        desc : 'As an avid electronic music fan and Spotify user, I was shocked to learn that Spotify\'s \'Shuffle\' feature prioritizes songs that cost them less per play instead of being truly random. To fix this, I made a python script that creates a list of song ID\'s that are in my library, randomize the order, and then insert back into a playlist in a truly (pseudo) random order. To activate this script, all I have to do is play the song \'Sandstorm - Darude\' on my Spotify account. It will recognize the song ID current playing, randomize all of my tracks, and then quickly switch my currently-playing song to the first one in the playlist.'
                     },
                     {
-                    
-                    name : 'Esccape Chillennium 2019',
-                    url : 'https://github.com/HBake/Escape-Chillenium-2019',
-                    img : 'images/chill.png',
-                    desc : 'My team and I developed a 2d game in Unity for Chillenium 2019 at Texas A&M University. The goal of the game is to escape the hackathon that we created it at.'
+                        
+                        name : 'Esccape Chillennium 2019',
+                        url : 'https://github.com/HBake/Escape-Chillenium-2019',
+                        img : 'images/chill.png',
+                        desc : 'My team and I developed a 2d game in Unity for Chillenium 2019 at Texas A&M University. The goal of the game is to escape the hackathon that we created it at.'
                     },
                     {
-                    
-                    name : 'Tone Analyzing Twitter Bot',
-                    url : 'https://github.com/HBake/Twitter-Bot/blob/master/tone_bot.py',
-                    img : 'images/twitter.png',
-                    desc : 'In a Scientific Research and Design class, I wrote a python script to continually monitor the Twittersphere\'s perception of any given key-word. The script would grab 10,000 characters\' worth of tweets that contained the key-word, then send the data to IBM Watson\'s tone analyzer and report 5 different tones (anger, disgust, fear, joy, and sadness) every 10 minutes. I was then able to graph the resulting tones over a period of time and numerically display how Twitter felt after specific global events.'
+                        
+                        name : 'Tone Analyzing Twitter Bot',
+                        url : 'https://github.com/HBake/Twitter-Bot/blob/master/tone_bot.py',
+                        img : 'images/twitter.png',
+                        desc : 'In a Scientific Research and Design class, I wrote a python script to continually monitor the Twittersphere\'s perception of any given key-word. The script would grab 10,000 characters\' worth of tweets that contained the key-word, then send the data to IBM Watson\'s tone analyzer and report 5 different tones (anger, disgust, fear, joy, and sadness) every 10 minutes. I was then able to graph the resulting tones over a period of time and numerically display how Twitter felt after specific global events.'
                     }
                     ];
                     
-
                 %>
 
                 <% projects.forEach(proj => { %>
@@ -110,8 +98,6 @@
                         </div>
                     </div>
                 <% }) %>
-
-                
 
             </div>
         </div>
